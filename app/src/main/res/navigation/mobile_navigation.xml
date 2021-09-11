@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_category">
+
+    <fragment
+        android:id="@+id/nav_category"
+        android:name="com.example.food_delivery_server.ui.Category.CategoryFragment"
+        android:label="@string/menu_category"
+        tools:layout="@layout/fragment_category" />
+
+    <fragment
+        android:id="@+id/nav_food_list"
+        android:name="com.example.food_delivery_server.ui.FoodList.FoodList_Fragment"
+        android:label="@string/menu_food_list"
+        tools:layout="@layout/fragment_food_list" >
+
+    <action android:id="@+id/clearBackStack"
+        app:launchSingleTop="true"
+        app:popUpTo="@id/nav_category"
+        app:popUpToInclusive="true"/>
+
+    </fragment>
+</navigation>
