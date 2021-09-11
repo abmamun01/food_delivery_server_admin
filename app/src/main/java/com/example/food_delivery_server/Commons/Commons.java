@@ -1,5 +1,7 @@
 package com.example.food_delivery_server.Commons;
 
+import android.widget.TextView;
+
 import com.example.food_delivery_server.Model.CategoryModel;
 import com.example.food_delivery_server.Model.FoodModel;
 import com.example.food_delivery_server.Model.ServerUserModel;
@@ -12,4 +14,7 @@ public class Commons {
     public static ServerUserModel currentSerVerUser;
     public static CategoryModel categorySelected;
     public static FoodModel selectedFood;
+
+    public static void setSpanString(String hey, String name, TextView txt_user) {
+    }
 }

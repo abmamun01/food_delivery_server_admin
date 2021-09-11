@@ -290,8 +290,6 @@ public class FoodList_Fragment extends Fragment {
 
 
                         }));
-
-
             }
         };
 
